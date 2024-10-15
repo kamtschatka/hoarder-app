@@ -284,7 +284,7 @@ export function PromptDemo() {
         Prompt Preview
       </div>
       <p>Text Prompt</p>
-      <code className="whitespace-pre-wrap rounded-md bg-muted p-3 text-sm text-muted-foreground">
+      <code className="whitespace-pre-wrap break-words rounded-md bg-muted p-3 text-sm text-muted-foreground">
         {buildTextPrompt(
           clientConfig.inference.inferredTagLang,
           (prompts ?? [])
@@ -295,7 +295,7 @@ export function PromptDemo() {
         ).trim()}
       </code>
       <p>Image Prompt</p>
-      <code className="whitespace-pre-wrap rounded-md bg-muted p-3 text-sm text-muted-foreground">
+      <code className="whitespace-pre-wrap break-words rounded-md bg-muted p-3 text-sm text-muted-foreground">
         {buildImagePrompt(
           clientConfig.inference.inferredTagLang,
           (prompts ?? [])
